@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gülsüm Utlu | Kişisel Web Sitesi</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="lang-switch">
+        <button class="lang-btn" id="tr-btn">
+          <img src="images/TR.jpeg" alt="Türkçe" class="flag-icon"> TR
+        </button>
+        <button class="lang-btn" id="en-btn">
+          <img src="images/ENG.jpeg" alt="English" class="flag-icon"> ENG
+        </button>
+      </div>
+      <nav>
+        <ul>
+          <li><a id="nav-home" href="#anasayfa">Anasayfa</a></li>
+          <li><a id="nav-about" href="#hakkimda">Hakkımda</a></li>
+          <li><a id="nav-hobbies" href="#hobiler">Hobiler</a></li>
+          <li><a id="nav-projects" href="#projelerim">Projeler</a></li>
+          <li><a id="nav-contact" href="#iletisim">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <img src="images/fotograf.jpg" alt="Fotoğrafım">
+        <h1 id="hero-title">Sayfama Hoş Geldiniz</h1>
+      </section>
+
+      <section id="hakkimda">
+        <h2 id="about-title">Hakkımda</h2>
+        <article>
+          <p id="about-text">
+            Merhaba! Ben Gülsüm Utlu. Şu sıralar Java’nın güçlü dünyasında gezinirken, bir yandan da back-end geliştirme alanında sağlam adımlar atıyorum. Hedefim net: Full Stack Developer olarak yazılım projelerine uçtan uca katkı sağlamak. Frontend ve backend’in birleştiği yerde, hem teknik bilgiye hem de kullanıcıyı anlayan bir bakış açısına ihtiyaç olduğuna inanıyorum. İşte ben tam da bu dengeyi kurmak için buradayım. Kod yazarken sadece çalışmasını değil, sürdürülebilir ve okunabilir olmasını da önemsiyorum. Takım içinde paylaşımcı, öğrenmeye açık ve çözüm odaklı bir yapım var.
+          </p>
+        </article>
+      </section>
+
+      <section id="hobiler">
+        <h2 id="hobbies-title">Hobiler</h2>
+        <article>
+          <p id="hobbies-text">
+            Kod yazmadığım zamanlarda kendimi ruhen ve zihnen besleyen alanlara yöneliyorum. Doğayla iç içe olmayı sevdiğim için trekking vazgeçilmezlerimden biri. Uzun yürüyüşlerde hem bedenimi dinlendiriyor hem de zihnimi toparlıyorum. Boş zamanlarımda kitap okumak en keyif aldığım aktivitelerden biri. Favori romanım Gurur ve Önyargı, dönem kurgusuyla ve karakter derinliğiyle beni her okumada yeniden etkiliyor. Müzik ise hayatımın arka planında hep var. Farklı türlerde müzikler dinleyerek hem odaklanıyor hem de ilham alıyorum. Ayrıca düzenli olarak pilates yapıyorum; bu hem bedenimi güçlü tutuyor hem de disiplinli bir yaşam tarzını destekliyor. Yeni fikirler üretmeyi ve kendi projelerimi geliştirmeyi de çok seviyorum. Her yeni proje, kendimi ifade edebileceğim yeni bir alan gibi geliyor.
+          </p>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img src="images/33031.jpg" alt="Trekking" onclick="openModal(this)">
+            </div>
+             <div class="gallery-item">
+              <img src="images/33044.jpg" alt="Trekking" onclick="openModal(this)">
+            </div>
+             <div class="gallery-item">
+              <img src="images/codding.jpeg" alt="Kod" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+              <img src="images/prideandprjdc.jpeg" alt="Kitap" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+              <img src="images/concer.jpeg" alt="Müzik" onclick="openModal(this)">
+            </div>
+            
+          </div>
+        </article>
+      </section>
+
+      <section id="projelerim">
+        <h2 id="projects-title">Projelerim</h2>
+        <article>
+          <h3 id="project1-title">WebProje (HTML, CSS, JS)</h3>
+          <p id="project1-desc">
+            Bu projede, Çorum şehrini tanıtan kapsamlı bir web sitesi geliştirdim. Sitede Çorum'un tarihçesi, gezilecek yerleri ve yöresel yemekleri detaylı şekilde tanıtılmakta. Ayrıca ziyaretçilerin kolayca iletişime geçebilmesi için bir iletişim formu da ekledim. Projenin amacı, Çorum'u dijital ortamda etkili ve modern bir şekilde tanıtmaktır.
+          </p>
+        </article>
+        <article>
+          <h3 id="project2-title">Menü Görseli (HTML & CSS)</h3>
+          <p id="project2-desc">
+            Sadece HTML ve CSS kullanarak modern ve kullanıcı dostu bir menü tasarımı oluşturdum. Bu menü, farklı cihazlarda sorunsuz çalışacak şekilde responsive olarak tasarlanmıştır ve sade arayüzüyle öne çıkmaktadır.
+          </p>
+        </article>
+        <article>
+          <h3 id="project3-title">Form Sitesi (HTML & CSS)</h3>
+          <p id="project3-desc">
+            HTML ve CSS ile hazırladığım bu projede, kullanıcıların kolayca bilgi girebileceği ve etkileşimde bulunabileceği şık bir form arayüzü tasarladım. Formun amacı, kullanıcı deneyimini ön planda tutarak sade ve anlaşılır bir iletişim ortamı sunmaktır.
+          </p>
+        </article>
+        <article>
+          <h3 id="project4-title">FPS Oyun (Unity & C#)</h3>
+          <p id="project4-desc">
+            Farklı alanlara olan ilgim sayesinde Unity ve C# kullanarak bir FPS (First Person Shooter) tarzında oyun geliştirdim. Bu projede temel oyun mekaniği, karakter kontrolü ve düşmanların ana karakteri otomatik takip edebilmesi için yapay zeka entegre ettim. Oyun geliştirme süreci, yazılım ve tasarım becerilerimi farklı bir boyuta taşımamı sağladı.
+          </p>
+        </article>
+        <p id="github-link" style="text-align:center; margin-top:1.5rem; color:#2c3e50; font-size:1rem;">
+          (Tüm projelerime <a href="https://github.com/utluuu" target="_blank" style="color:#3498db; text-decoration:underline;">GitHub</a> sayfamdan ulaşabilirsiniz.)
+        </p>
+      </section>
+
+      <section id="iletisim">
+        <h2 id="contact-title">İletişim Formu</h2>
+        <form id="contact-form" action="https://formspree.io/f/xldleokl" method="POST">
+          <div class="form-group">
+            <label for="name" id="label-name">Adınız:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email" id="label-email">E-posta:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message" id="label-message">Mesajınız:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" id="contact-submit">Gönder</button>
+        </form>
+        <div id="form-success"></div>
+      </section>
+    </main>
+    
+    <div id="modal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img">
+    </div>
+
+    <footer>
+      <p id="footer-text">&copy; Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
